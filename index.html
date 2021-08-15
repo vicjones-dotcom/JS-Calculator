@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Calculator</title>
+    <link href="main.css" rel="stylesheet" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="calculator-grid">
+      <div class="calculator-grid__output screen">
+        <div
+          data-previous-operand
+          class="calculator-grid__output__previous-operand"
+        ></div>
+        <div
+          data-current-operand
+          class="calculator-grid__output__current-operand"
+        ></div>
+      </div>
+      <button
+        data-all-clear
+        class="calculator-grid__span-two calculator-grid__button clear"
+      >
+        AC
+      </button>
+      <button data-delete class="calculator-grid__button">DEL</button>
+      <button
+        data-operation
+        class="calculator-grid__operator calculator-grid__button divide"
+      >
+        ÷
+      </button>
+      <button data-number class="calculator-grid__button">1</button>
+      <button data-number class="calculator-grid__button two">2</button>
+      <button data-number class="calculator-grid__button three">3</button>
+      <button
+        data-operation
+        class="calculator-grid__operator calculator-grid__button multiply"
+      >
+        *
+      </button>
+      <button data-number class="calculator-grid__button">4</button>
+      <button data-number class="calculator-grid__button five">5</button>
+      <button data-number class="calculator-grid__button six">6</button>
+      <button
+        data-operation
+        class="calculator-grid__operator calculator-grid__button add"
+      >
+        +
+      </button>
+      <button data-number class="calculator-grid__button">7</button>
+      <button data-number class="calculator-grid__button">8</button>
+      <button data-number class="calculator-grid__button nine">9</button>
+      <button
+        data-operation
+        class="calculator-grid__operator calculator-grid__button subtract"
+      >
+        -
+      </button>
+      <button data-number class="calculator-grid__button">.</button>
+      <button data-number class="calculator-grid__button zero">0</button>
+      <button
+        data-equals
+        class="
+          calculator-grid__span-two
+          calculator-grid__equals
+          calculator-grid__button
+          equals
+        "
+      >
+        =
+      </button>
+    </div>
+  </body>
+</html>

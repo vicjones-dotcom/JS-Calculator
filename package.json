@@ -1,0 +1,19 @@
+{
+  "name": "updatedcalculator2",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:scss": "sass --watch main.scss main.css",
+    "cypress:open": "cypress open"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.37.5"
+  },
+  "devDependencies": {
+    "cypress": "^8.2.0"
+  },
+  "description": ""
+}
