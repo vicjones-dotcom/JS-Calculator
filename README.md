@@ -12,4 +12,4 @@ EXPECTATIONS OF THE CALCULATOR:
 6. Delete button will delete each digit.
 7. Decimal button will handle decimal operations.
 8. Numbers will be separated by a ",".
-9. The screen will adjust to the length of the number without overflowing.
+9. The screen will adjust to the length of the numbers without overflowing.

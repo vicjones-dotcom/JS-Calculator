@@ -42,8 +42,42 @@ describe("Substraction operator", () => {
     cy.get(".screen").contains("4");
   });
 });
-// describe("Clear operator", () => {
-//   it("Should clear input", () => {
-//     cy.get(".screen").type("");
-//   });
-// });
+describe("Clear operator", () => {
+  it("Clears all numbers", () => {
+    cy.get(".two").click();
+    cy.get(".three").click();
+    cy.get(".five").click();
+    cy.get(".clear").click();
+    cy.get(".screen").should("not.contain", "Text");
+  });
+});
+describe("Delete operator", () => {
+  it("Should remove the last digit and equal 2", () => {
+    cy.get(".two").click();
+    cy.get(".zero").click();
+    cy.get(".delete").click();
+    cy.get(".screen").contains("2");
+  });
+});
+describe("Decimal operator", () => {
+  it("Should equal 5.3", () => {
+    cy.get(".five").click();
+    cy.get(".decimal").click();
+    cy.get(".three").click();
+    cy.get(".screen").contains("5.3");
+  });
+});
+describe("Decimal addition", () => {
+  it("Should equal 3.8", () => {
+    cy.get(".clear").click();
+    cy.get(".one").click();
+    cy.get(".decimal").click();
+    cy.get(".five").click();
+    cy.get(".add").click();
+    cy.get(".two").click();
+    cy.get(".decimal").click();
+    cy.get(".three").click();
+    cy.get(".equals").click();
+    cy.get(".screen").contains("3.8");
+  });
+});
