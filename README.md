@@ -11,5 +11,5 @@ EXPECTATIONS OF THE CALCULATOR:
 5. Clear button will clear all numbers in the screen.
 6. Delete button will delete each digit.
 7. Decimal button will handle decimal operations.
-8. Numbers will be separated by a ",".
+8. Numbers will be displayed in a decimal separation form.
 9. The screen will adjust to the length of the numbers without overflowing.
